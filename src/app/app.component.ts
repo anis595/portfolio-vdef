@@ -15,4 +15,5 @@ export class AppComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
     console.log('hello');
   }
+  sliderValue: number = 50;
 }
