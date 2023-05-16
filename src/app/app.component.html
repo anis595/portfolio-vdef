@@ -59,7 +59,10 @@
         </a>
       </li>
       <li class="menu-li relative mx-4 my-6 md:my-0 button">
-        <a href="#" class="relative px-6 py-3 font-bold text-black group">
+        <a
+          (click)="(showModal)"
+          class="relative px-6 py-3 font-bold text-black group modal-trigger"
+        >
           <span
             class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0 rounded-tr-xl rounded-bl-xl"
           ></span>
@@ -101,7 +104,7 @@
     data-aos="zoom-in"
     data-aos-duration="1000"
     data-aos-delay="50"
-    class="flex justify-center md:text-5xl uppercase pb-20 text-3xl container"
+    class="flex justify-center md:text-5xl uppercase pb-20 text-3xl"
   >
     <h2 class="border-r-2 border-l-2 border-white px-4">Qui suis-je?</h2>
   </div>
@@ -117,7 +120,7 @@
       />
     </div>
   </div>
-  <div class="text-white">
+  <div class="text-white container">
     <p
       class="border-2 border-white rounded-lg p-4 hover:bg-slate-600 transition-all ease-in-out cursor-pointer"
       data-aos="fade-left"
@@ -314,6 +317,7 @@
       <div>
         <img
           id="stack"
+          data-aos-anchor-placement="top"
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-delay="50"
@@ -322,6 +326,7 @@
           alt=""
         />
         <p
+          data-aos-anchor-placement="top"
           data-aos="zoom-in"
           data-aos-delay="50"
           data-aos-delay="50"
@@ -425,101 +430,129 @@
   </div>
 </section>
 
-<section
-  class="w-screen py-6 bg-black flex items-center justify-center flex-wrap text-center"
->
+<section class="w-screen py-6 bg-black text-center">
   <div
-    class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96 saturate-0 hover:saturate-100"
+    class="flex items-center justify-center flex-wrap container md:p-40 gap-5 md:gap-10"
   >
-    <div class="h-2/4 w-full">
-      <img
-        class="w-full h-full object-cover rounded-t"
-        src="../assets/monster.png"
-        alt="piña"
-      />
+    <div
+      class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96 saturate-0 hover:saturate-100"
+    >
+      <div class="h-2/4 w-full">
+        <img
+          class="w-full h-full object-cover rounded-t"
+          src="../assets/monster.png"
+          alt="piña"
+        />
+      </div>
+      <div class="w-full h-2/4 p-3">
+        <a href="#" class="hover:text-yellow-600 text-gray-700">
+          <span
+            class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
+            >Monster Hunter</span
+          >
+        </a>
+        <p class="text-gray-600 text-sm leading-5 my-3">
+          Premier site codé en JS sur le thème MonsterHunter
+        </p>
+        <div>
+          <a
+            href=""
+            class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
+            >github</a
+          >
+        </div>
+      </div>
     </div>
-    <div class="w-full h-2/4 p-3">
-      <a href="#" class="hover:text-yellow-600 text-gray-700">
-        <span
-          class="text-lg font-semibold uppercase tracking-wide m-2 md:text-2xl"
-          >Monster Hunter</span
-        >
-      </a>
-      <p class="text-gray-600 text-sm leading-5 m-2 md:text-base md:p-4">
-        Un de mes premier site codé en Js et html,CSS.
-      </p>
-      <a
-        class="hover:text-red-600 text-sm md:text-xl md:font-semibold md:uppercase"
-        href=""
-        >Voir sur github</a
-      >
+    <div
+      class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96 saturate-0 hover:saturate-100"
+    >
+      <div class="h-2/4 w-full">
+        <img
+          class="w-full h-full object-cover rounded-t"
+          src="../assets/rhizome.png"
+          alt="piña"
+        />
+      </div>
+      <div class="w-full h-2/4 p-3">
+        <a href="#" class="hover:text-yellow-600 text-gray-700">
+          <span
+            class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
+            >Rhizome</span
+          >
+        </a>
+        <p class="text-gray-600 text-sm leading-5 my-3">
+          Projet effectué en stage, qui m'a permis de découvrir Tailwind.
+        </p>
+        <div>
+          <a
+            href=""
+            class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
+            >github</a
+          >
+        </div>
+      </div>
     </div>
-  </div>
-  <div
-    class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96 saturate-0 hover:saturate-100"
-  >
-    <div class="h-2/4 w-full">
-      <img
-        class="w-full h-full object-cover rounded-t"
-        src="../assets/rhizome.png"
-        alt="piña"
-      />
-    </div>
-    <div class="w-full h-2/4 p-3">
-      <a href="#" class="hover:text-yellow-600 text-gray-700">
-        <span class="text-lg font-semibold uppercase tracking-wide m-2"
-          >Rhizome</span
-        >
-      </a>
-      <p class="text-gray-600 text-sm leading-5 m-2">
-        Projet effectué en stage, qui m'a permis de découvrir Tailwind.
-      </p>
-      <a class="hover:text-red-600 text-sm" href="">Voir sur github</a>
-    </div>
-  </div>
 
-  <div
-    class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96"
-  >
-    <div class="h-2/4 w-full">
-      <img
-        class="w-full h-full object-cover rounded-t"
-        src="../assets/portfolio.png"
-        alt="piña"
-      />
+    <div
+      class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96"
+    >
+      <div class="h-2/4 w-full">
+        <img
+          class="w-full h-full object-cover rounded-t"
+          src="../assets/portfolio.png"
+          alt="piña"
+        />
+      </div>
+      <div class="w-full h-2/4 p-3">
+        <a href="#" class="hover:text-yellow-600 text-gray-700">
+          <span
+            class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
+            >Portolio</span
+          >
+        </a>
+        <p class="text-gray-600 text-sm leading-5 my-3">
+          Le portfolio sur lequel vous ête actuellement! Codé en angular et
+          Tailwind
+        </p>
+        <div>
+          <a
+            href=""
+            class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
+            >github</a
+          >
+        </div>
+      </div>
     </div>
-    <div class="w-full h-2/4 p-3">
-      <a href="#" class="hover:text-yellow-600 text-gray-700">
-        <span class="text-lg font-semibold uppercase tracking-wide m-2"
-          >Mon portfolio</span
-        >
-      </a>
-      <p class="text-gray-600 text-sm leading-5 m-2">
-        Mon premier site créé en Angular et Tailwind
-      </p>
-      <a class="hover:text-red-600 text-sm" href="">Voir sur github</a>
-    </div>
-  </div>
 
-  <div
-    class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96"
-  >
-    <div class="h-2/4 w-full">
-      <img
-        class="w-full h-full object-cover rounded-t"
-        src="../assets/portfolio.png"
-        alt="piña"
-      />
-    </div>
-    <div class="w-full h-2/4 p-3">
-      <a href="#" class="hover:text-yellow-600 text-gray-700">
-        <span class="text-lg font-semibold uppercase tracking-wide">Disco</span>
-      </a>
-      <p class="text-gray-600 text-sm leading-5 m-2">
-        Une application qui permet grâce à une base de donnée de gérer Artist,
-        Album et Tracks
-      </p>
-      <a class="hover:text-red-600 text-sm" href="">Voir sur github</a>
+    <div
+      class="bg-white w-72 h-72 shadow-md rounded m-3 hover:scale-110 cursor-pointer transition-all ease-in-out md:w-96 md:h-96"
+    >
+      <div class="h-2/4 w-full">
+        <img
+          class="w-full h-full object-cover rounded-t"
+          src="../assets/portfolio.png"
+          alt="piña"
+        />
+      </div>
+      <div class="w-full h-2/4 p-3">
+        <a href="#" class="hover:text-yellow-600 text-gray-700">
+          <span
+            class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
+            >Miousic</span
+          >
+        </a>
+        <p class="text-gray-600 text-sm leading-4 my-3">
+          Projet codé en Angular et Tailwind. la base de donnée est généré en
+          local avec typicode.
+        </p>
+        <div>
+          <a
+            href=""
+            class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
+            >github</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -591,3 +624,10 @@
     <a class="text-whitehite" href="">・アニス・(Anis Ghd.)</a>
   </div>
 </footer>
+<div class="modal" [ngClass]="{ visible: isVisible }">
+  <div class="modal-content">
+    <h2>Modal Title</h2>
+    <p>Modal content goes here.</p>
+    <button (click)="closeModal()">Close</button>
+  </div>
+</div>
