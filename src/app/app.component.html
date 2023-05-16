@@ -60,7 +60,7 @@
       </li>
       <li class="menu-li relative mx-4 my-6 md:my-0 button">
         <a
-          (click)="(showModal)"
+          (click)="showModal()"
           class="relative px-6 py-3 font-bold text-black group modal-trigger"
         >
           <span
@@ -432,6 +432,14 @@
 
 <section class="w-screen py-6 bg-black text-center">
   <div
+    data-aos="zoom-in"
+    data-aos-duration="1000"
+    data-aos-delay="50"
+    class="flex justify-center md:text-5xl uppercase pb-0 text-3xl"
+  >
+    <h2 class="border-r-2 border-l-2 border-white px-4">Projet</h2>
+  </div>
+  <div
     class="flex items-center justify-center flex-wrap container md:p-40 gap-5 md:gap-10"
   >
     <div
@@ -624,10 +632,12 @@
     <a class="text-whitehite" href="">・アニス・(Anis Ghd.)</a>
   </div>
 </footer>
-<div class="modal" [ngClass]="{ visible: isVisible }">
-  <div class="modal-content">
-    <h2>Modal Title</h2>
-    <p>Modal content goes here.</p>
-    <button (click)="closeModal()">Close</button>
+<div class="">
+  <div class="modal" [ngClass]="{ visible: isVisible }">
+    <div class="modal-content">
+      <h2 class="text-black">Modal Title</h2>
+      <p class="h-96 w-96">Modal content goes here.</p>
+      <button (click)="closeModal()">Close</button>
+    </div>
   </div>
 </div>
