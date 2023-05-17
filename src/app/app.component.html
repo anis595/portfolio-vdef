@@ -453,7 +453,7 @@
         />
       </div>
       <div class="w-full h-2/4 p-3">
-        <a href="#" class="hover:text-yellow-600 text-gray-700">
+        <a href="" target="_blank" class="hover:text-yellow-600 text-gray-700">
           <span
             class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
             >Monster Hunter</span
@@ -464,7 +464,8 @@
         </p>
         <div>
           <a
-            href=""
+            href="https://github.com/anis595/MonsterHunter"
+            target="_blank"
             class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
             >github</a
           >
@@ -482,7 +483,7 @@
         />
       </div>
       <div class="w-full h-2/4 p-3">
-        <a href="#" class="hover:text-yellow-600 text-gray-700">
+        <a href="" target="_blank" class="hover:text-yellow-600 text-gray-700">
           <span
             class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
             >Rhizome</span
@@ -493,7 +494,8 @@
         </p>
         <div>
           <a
-            href=""
+            href="https://github.com/anis595/rhizome2023"
+            target="_blank"
             class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
             >github</a
           >
@@ -524,7 +526,8 @@
         </p>
         <div>
           <a
-            href=""
+            href="https://github.com/anis595/portfolio-vdef"
+            target="_blank"
             class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
             >github</a
           >
@@ -543,7 +546,7 @@
         />
       </div>
       <div class="w-full h-2/4 p-3">
-        <a href="#" class="hover:text-yellow-600 text-gray-700">
+        <a href="" target="_blank" class="hover:text-yellow-600 text-gray-700">
           <span
             class="text-lg font-semibold uppercase tracking-wide md:text-2xl"
             >Miousic</span
@@ -555,7 +558,8 @@
         </p>
         <div>
           <a
-            href=""
+            href="https://github.com/anis595/Disco"
+            target="_blank"
             class="uppercase border-2 p-1 text-black hover:text-white hover:bg-black transition-all ease-in-out font-semibold"
             >github</a
           >
@@ -569,7 +573,8 @@
   <div class="container px-6 pt-6">
     <div class="mb-6 flex justify-center">
       <a
-        href="#!"
+        href="https://www.instagram.com/anis_ghd/"
+        target="_blank"
         type="button"
         class="hover:scale-125 m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
         data-te-ripple-init
@@ -588,7 +593,8 @@
       </a>
 
       <a
-        href="#!"
+        href="https://www.linkedin.com/in/anis-ghedabnia/"
+        target="_blank"
         type="button"
         class="hover:scale-125 m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
         data-te-ripple-init
@@ -607,7 +613,8 @@
       </a>
 
       <a
-        href="#!"
+        href="https://github.com/anis595"
+        target="_blank"
         type="button"
         class="hover:scale-125 m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
         data-te-ripple-init
@@ -634,10 +641,57 @@
 </footer>
 <div class="">
   <div class="modal" [ngClass]="{ visible: isVisible }">
-    <div class="modal-content">
-      <h2 class="text-black">Modal Title</h2>
-      <p class="h-96 w-96">Modal content goes here.</p>
-      <button (click)="closeModal()">Close</button>
+    <div class="modal-content w-96">
+      <form
+        action="https://formspree.io/f/xyyavbeg"
+        method="POST"
+        class="space-y-8"
+      >
+        <div>
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 uppercase"
+            >email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="name@exemple.com"
+            required
+          />
+        </div>
+        <div></div>
+        <div class="sm:col-span-2">
+          <label
+            for="message"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 uppercase"
+            >Votre message</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            placeholder="Premier contact, rendez-vous, plus d'informations"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="py-3 px-5 text-sm font-medium text-center text-blacked rounded-lg bg-yellowed sm:w-fit hover:text-white hover:bg-black transition-all duration-200 ease-in"
+        >
+          Envoyer
+        </button>
+      </form>
+      <div class="flex justify-center items-center">
+        <button
+          class="border-2 border-black px-3 rounded-md font-roboto"
+          (click)="closeModal()"
+        >
+          Fermer
+        </button>
+      </div>
     </div>
   </div>
 </div>
